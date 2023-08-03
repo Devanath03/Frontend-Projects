@@ -31,7 +31,7 @@ body {
   padding: 48px 64px;
   border-radius: 36px;
   background: #eaeaea;
-  box-shadow: 41px 41px 82px #eaeaea, -41px -41px 82px #eaeaea;
+  box-shadow: 41px 41px 82px black, -41px -41px 82px black;
 }
 .song-name {
   margin: 0;
