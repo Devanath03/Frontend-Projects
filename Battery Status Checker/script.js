@@ -32,13 +32,13 @@ navigator.getBattery().then((battery) => {
 
   //  it checks that does your device is plugged in or not
 
-  battery.addEventListener("chargingchange", function () {
+  battery.addEventListener("chargingchange",() =>{ 
     updateAllBatteryInfo();
-  });
+});
 
   //  Event Listener, when the Battery Level Changes
 
-  battery.addEventListener("levelchange", function () {
+  battery.addEventListener("levelchange",() => {
     updateAllBatteryInfo();
   });
 
@@ -46,16 +46,19 @@ navigator.getBattery().then((battery) => {
 
   //  it checks that does your device is plugged in or not
 
-  battery.addEventListener("dischargingtimechange", function () {
+  battery.addEventListener("dischargingtimechange", () => {
     updateAllBatteryInfo();
   });
 
   //   Updating the battery Level container and the charging bar width
 
   function updateLevelInfo() {
-    batteryLevel.textContent = `${parseInt(battery.level * 100)}%`;
+    batteryLevel.textContent = `${+(battery.level * 100)}%`; //instead of + you can use parseInt
 
-    chargingBar.style.width = `${parseInt(battery.level * 100)}%`;
+    console.log("ParseInt Conversion:",typeof(parseInt(battery.level * 100)));
+    console.log("+ operator Conversion:",typeof(+(battery.level * 100)));
+
+    chargingBar.style.width = `${+(battery.level * 100)}%`;  //instead of + you can use parseInt
   }
 
   function updateChargeInfo() {
