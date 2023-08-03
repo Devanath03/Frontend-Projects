@@ -43,11 +43,13 @@ setInterval(() => {
     let yr = new Date().getFullYear();
     const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-
+    console.log(typeof(day.getDay()));  //returning value will be in number
     let wkdy = week[day.getDay()];
+    dd = dd < 10 ? "0" + dd : dd;
+    mon = mon < 10 ? "0" + mon : mon;
     weekDay.innerHTML = wkdy;
     date.innerHTML = dd;
-    month.innerHTML = mon + 1;
+    month.innerHTML = mon;
     year.innerHTML = yr;
     // let mn = new Date().getMonth();
-}, 1000);
+}, 1000); //function get executed after 1 seconds
