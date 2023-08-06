@@ -35,18 +35,47 @@ class Github {
 
 const findUser = new Github();
 
-findUser.getUsers("john doe")
-	.then(res => {
-	if(res.total_count > 0) findUser.createElement(res.items,res.total_count);
-})
+//IT WILL SHOW DEFAULT USER WITHOUT ANY SERCH IF UNCOMMENTTED
+// findUser.getUsers("john doe")
+// 	.then(res => {
+// 	if(res.total_count > 0) findUser.createElement(res.items,res.total_count);
+// })
 
-document.querySelector('.search-input').addEventListener('keyup',e => {
-    if(e.target.value !== "" && e.keyCode == 13){
-        findUser.getUsers(e.target.value)
+let UsrNotFnd = "User Not Found";
+
+document.getElementById('fa-solid').addEventListener('click',() => {
+    let send = document.querySelector('.search-input').value;
+    console.log(send);
+    find(send);
+});
+
+const find = (e) => {
+    if(e !== ""){ 
+        findUser.getUsers(e)
         .then(res => {
-            if(res.total_count > 0) findUser.createElement(res.items,res.total_count);
+            if(res.total_count > 0) {
+                console.log(res.total_count);
+                findUser.createElement(res.items,res.total_count);
+                document.getElementById("app").style.height = '400px';
+            }
+            else{
+                console.log(res.total_count);
+                InvalidUser();
+            }
         })
     }else{
-        document.querySelector('.number').textContent = 0;
+        InvalidUser();
     }
-});
+}
+
+let InvalidUser = () => {
+    let ul = document.getElementById('list');
+    ul.innerHTML = "";
+    let li = document.createElement('li');
+    ul.appendChild(li);
+    li.innerHTML = `
+    <div class="user-info">
+    <span class="user-name">${UsrNotFnd}</span>
+    </div>`;
+    document.querySelector('.number').textContent = 0;
+}
