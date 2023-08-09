@@ -1,5 +1,3 @@
-// all the containers we need to update the battery information
-
 const chargingIcon = document.querySelector(".charging_icon");
 
 const batteryLevel = document.querySelector(".battery_level");
@@ -10,10 +8,10 @@ const dischargingTime = document.querySelector(".discharging_time");
 
 const otherInfo = document.querySelector(".other_info");
 
-// Getting battery it returns a promise
+// Promise is called by battery
 
 navigator.getBattery().then((battery) => {
-  /* Update all the battery information which is a combination of multiple functions */
+  /* Updating all the battery information which is a combination of multiple functions */
 
   function updateAllBatteryInfo() {
     
