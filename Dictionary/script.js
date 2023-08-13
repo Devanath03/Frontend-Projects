@@ -84,8 +84,8 @@ removeIcon.addEventListener("click", () => {
     infoText.innerHTML = "Type any existing word and press enter to get meaning, example, synonyms, etc.";
 });
 
-/*
-REPLACE VOLUME METHOD AND UNCOMMENT THIS AREA {THIS FORMAT NOT SUPPORTING IN BROWSER} FOR PRONOUNCING WORDS USING HTTPS
+
+/* REPLACE VOLUME METHOD AND UNCOMMENT THIS AREA {THIS FORMAT NOT SUPPORTING IN BROWSER} FOR PRONOUNCING WORDS USING HTTPS
 volume.addEventListener("click", () => {
     volume.style.color = "#4D59FB";
     audio.play();
