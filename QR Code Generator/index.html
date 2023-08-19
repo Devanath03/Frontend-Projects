@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
-    <body>
-        <section class="heading">
-        <div class="title">QR Codes</div>
-        <div class="sub-title">Generate QRCode for anything!</div>
-        </section>
-        <section class="user-input">
-        <label for="input_text">Type something...</label>
-        <input type="text" name="input_text" id="input_text" autocomplete="off">
-        <button class="button" type="submit">Generate QR Code</button>
-        </section>
-        <div class="qr-code" style="display: none;"></div>
-        <script src="script.js"></script>
-    </body>
+    <div class="container">
+        <header>
+        <h1>QR Code Generator</h1>
+        <p>Paste your url or enter a text to create QR code</p>
+        </header>
+        <div class="form">
+            <input type="text" placeholder="Enter a text or url" spellcheck="false">
+            <button>Generate QR</button>
+        </div>
+        
+        <div class="qrCode">
+            <img src="" alt="">
+        </div>
+        <div class="download">
+            <button>Download</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
