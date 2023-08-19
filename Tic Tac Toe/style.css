@@ -5,27 +5,31 @@
 }
 
 body{
-    color: #545454;
-    background-color: #ec407a;
+    background: linear-gradient(to right, #56c7c9, #071f4e);
     display: flex;
     justify-content: center;
     font-family: sans-serif;
+    flex-direction: column;
+}
+
+h1{
+    color: #fff;
 }
 
 .container{
     display: flex;
-    background-color: #00acc1;
-    margin: 1.5rem;
-    padding: 1.25rem;
+    margin-top: 1rem;
+    padding: 1rem;
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .container .title{
     text-align: center;
 }
 .container .title span{
-    color: #f2ebd3;
+    color: #fff;
 }
 
 .status-action{
@@ -42,13 +46,15 @@ body{
 .status{
     font-size: 50px;
     font-weight: bolder;
-    margin-bottom: 20%;
+    margin-bottom: 5px;
 }
 .status-action .status span{
     color: #f2ebd3;
 }
 .status-action .reset{
     cursor: pointer;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 .status-action .reset:hover{
     color: black;
@@ -58,18 +64,22 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: #007c91;
-    grid-gap: 15px;
-    margin-top: 3rem;
+    background-color: #fff;
+    grid-gap: 10px;
+    margin-top: 0.5rem;
+    border-radius: 7px;
+    padding: 10px;
+    color: #F88379;
 }
 .game-grid .game-cell{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 175px;
-    width: 175px;
+    height: 150px;
+    width: 150px;
     cursor: pointer;
     background-color: #00acc1;
+    border-radius: 7px;
 }
 .game-grid .x::after{
     content: "×";
@@ -109,7 +119,7 @@ body{
 
 @media only screen and (max-width: 540px){
     .container{
-        margin: 25px;
+        margin: 20px;
         padding: 25px;
     }
     .game-grid .game-cell{
@@ -128,7 +138,7 @@ body{
 
 @media only screen and (max-width: 360px){
     .container{
-        margin: 25px;
+        margin: 20px;
         padding: 10px;
     }
     .game-grid .game-cell{
