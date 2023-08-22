@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Book</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Contact Book
+        <img src="https://i.ibb.co/x50wtLw/pngwing-com.png" alt="" width="34px" />
+      </h1>
+    </header>
+    <div class="container">
+      <!-- ADD CONTACTS -->
+        <label for="name">Add New Contact <span class="reset" onclick="reset()">Reset</span></label>
+          <div class="form">
+            <input type="text" id="name" placeholder="Enter Contact Name" required />
+            <input type="text" id="number" placeholder="Enter Contact Number" maxlength="10" required />
+            <button type="submit" id="addContact" onclick="addContact()">Submit</button>
+          </div>
+        <p id="displayNoti"></p>
+        <label for="getContact">Get Contact Details</label>
+        <div class="getInputs">
+          <input type="text" id="getContactName" placeholder="Contact Name" required/>
+          <button type="submit" id="getContact" onclick="getContact()"> Get Detail</button>
+        </div>
+        <p id="displayContact"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
