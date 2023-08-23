@@ -30,7 +30,7 @@ function addContact() {
     // GetItem
     let output = localStorage.getItem(getContactName);
     displayDetail.innerHTML = `${getContactName} : ${
-      output == null ? '(   This contact detail is not added' : `+91 ${output}`
+      output == null ? 'This contact detail is not added' : `+91 ${output}`
     }`;
     getContactName = '';
   }
