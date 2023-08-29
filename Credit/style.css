@@ -61,9 +61,11 @@ section::after {
 /* .container:hover {
   transform: rotateY(180deg);
 } */
+
 .container.is-flipped {
     transform: rotateY(180deg);
   }
+
 .container .card {
   top: 40%;
   position: absolute;
@@ -77,50 +79,62 @@ section::after {
   border: 1px solid rgba(255, 255, 255, 0.1);
   backface-visibility: hidden;
 }
+
 .front-face header,
 .front-face .logo {
   display: flex;
   align-items: center;
 }
+
 .front-face header {
   justify-content: space-between;
 }
+
 .front-face .logo img {
   width: 48px;
   margin-right: 10px;
 }
+
 h5 {
   font-size: 16px;
   font-weight: 400;
 }
+
 .front-face .chip {
   width: 50px;
 }
+
 .front-face .card-details {
   display: flex;
   margin-top: 40px;
   align-items: flex-end;
   justify-content: space-between;
 }
+
 h6 {
   font-size: 10px;
   font-weight: 400;
 }
+
 h5.number {
   font-size: 18px;
   letter-spacing: 1px;
 }
-h5.name {
+
+h6.name {
   margin-top: 20px;
 }
+
 .card.back-face {
   border: none;
   padding: 15px 25px 25px 25px;
   transform: rotateY(180deg);
 }
+
 .card.back-face h6 {
   font-size: 8px;
 }
+
 .card.back-face .magnetic-strip {
   position: absolute;
   top: 40px;
@@ -129,6 +143,7 @@ h5.name {
   width: 100%;
   background: #000;
 }
+
 .card.back-face .signature {
   display: flex;
   justify-content: flex-end;
@@ -144,6 +159,7 @@ h5.name {
     #efefef 9px
   );
 }
+
 .signature i {
   color: #000;
   font-size: 12px;
@@ -153,11 +169,20 @@ h5.name {
   margin-right: -30px;
   z-index: -1;
 }
+
 .card.back-face h5 {
   font-size: 8px;
   margin-top: 15px;
 }
 
+.part1{
+    display: flex;
+    justify-content: space-between;
+}
+.part2{
+    display: flex;
+    justify-content: space-between;
+}
 .card-num{
     position: relative;
     margin: 120px 0 0 27px;
@@ -169,6 +194,17 @@ h5.name {
     width: 220px;
 }
 
+.card-date{
+    position: relative;
+    margin: 120px 45px 0 0;
+    width: 150px;
+}
+.card-cvv{
+    position: relative;
+    margin: 33px 45px 0 0;
+    width: 150px;
+}
+
 input{
     font-size: 16px;
     padding: 10px 10px 10px 5px;
@@ -178,7 +214,7 @@ input{
     border-bottom: 1px solid #6c6c6c;
     background: transparent;
     color: #fff;
-  }
+}
   input:focus{
     outline: none;
   }
@@ -194,17 +230,20 @@ input{
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
   }
+
   input:focus ~ label,
   input:valid ~ label {
     top: -20px;
     font-size: 14px;
     color: #e9d022;
   }
-  .bar {
+
+.bar{
     position: relative;
     display: block;
     width: 220px;
-  }
+}
+
   .bar:before,
   .bar:after {
     content: "";
@@ -217,16 +256,20 @@ input{
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
   }
+
   .bar:before {
     left: 50%;
   }
+
   .bar:after {
     right: 50%;
   }
+
   input:focus ~ .bar:before,
   input:focus ~ .bar:after {
     width: 50%;
   }
+
   .highlight {
     position: absolute;
     height: 60%;
@@ -236,9 +279,11 @@ input{
     pointer-events: none;
     opacity: 0.5;
   }
+
   input:focus ~ .highlight {
     animation: input-focus 0.5s ease;
   }
+
   @keyframes input-focus {
     from {
       background: #e9d022;
@@ -249,14 +294,8 @@ input{
     }
   }
 
-  .card-date{
-    position: relative;
-    margin: 0 27px 0 0;
-    float: right;
-    width: 150px;
-}
-
-.card-date input{
+.card-date input,
+.card-cvv input{
     font-size: 16px;
     padding: 10px 10px 10px 5px;
     display: block;
@@ -267,7 +306,8 @@ input{
     color: #fff;
 }
 
-  .card-date label {
+  .card-date label,
+  .card-cvv label {
     color: #999999;
     font-size: 18px;
     font-weight: normal;
@@ -279,15 +319,19 @@ input{
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
   }
+
   .card-date input:focus ~ label,
-  .card-date input:valid ~ label {
+  .card-cvv input:focus ~ label,
+  .card-date input:valid ~ label,
+  .card-cvv input:valid ~ label {
     top: -20px;
     font-size: 14px;
     color: #e9d022;
   }
-  .card-date .bar {
+
+  .card-date .bar,
+  .card-cvv .bar {
     position: relative;
     display: block;
     width: 150px;
   }
-

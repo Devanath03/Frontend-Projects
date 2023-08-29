@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flipping Card UI Design</title>
+    <title>Credit Card</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,7 +23,8 @@
             <div class="name-number">
               <h6>Card Number</h6>
               <h5 class="number">3060 7030 6090 5040</h5>
-              <h5 class="name">Master Card</h5>
+              <h6  class="name">Card Holder Name</h6>
+              <h5>Master Card</h5>
             </div>
 
             <div class="valid-date">
@@ -47,23 +48,33 @@
         </div>
       </div>
       <div class="content-container">
-        <div class="card-num">
+        <div class="part1">
+           <div class="card-num">
             <input type="text" required="true" />
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Card Number</label>
-        </div>
-        <div class="card-date">
+           </div>
+          <div class="card-date">
             <input type="text" required="true" />
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Valid Thru</label>
+          </div>
         </div>
-        <div class="card-name">
+        <div class="part2">
+          <div class="card-name">
             <input type="text" required="true" />
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Card Holder Name</label>
+          </div>
+          <div class="card-cvv">
+            <input type="text" required="true" />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>CVV</label>
+          </div>
         </div>
       </div>
     </section>
