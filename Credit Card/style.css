@@ -179,15 +179,18 @@ h6.name {
     display: flex;
     justify-content: space-between;
 }
+
 .part2{
     display: flex;
     justify-content: space-between;
 }
+
 .card-num{
     position: relative;
     margin: 120px 0 0 27px;
     width: 220px;
 }
+
 .card-name{
     position: relative;
     margin: 33px 0 0 27px;
@@ -215,9 +218,11 @@ input{
     background: transparent;
     color: #fff;
 }
+
   input:focus{
     outline: none;
   }
+
   label {
     color: #999999;
     font-size: 18px;
@@ -305,29 +310,6 @@ input{
     background: transparent;
     color: #fff;
 }
-
-  .card-date label,
-  .card-cvv label {
-    color: #999999;
-    font-size: 18px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-  }
-
-  .card-date input:focus ~ label,
-  .card-cvv input:focus ~ label,
-  .card-date input:valid ~ label,
-  .card-cvv input:valid ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: #e9d022;
-  }
 
   .card-date .bar,
   .card-cvv .bar {
