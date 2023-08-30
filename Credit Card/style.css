@@ -58,10 +58,6 @@ section::after {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* .container:hover {
-  transform: rotateY(180deg);
-} */
-
 .container.is-flipped {
     transform: rotateY(180deg);
   }
@@ -118,10 +114,10 @@ h6 {
 
 h5.number {
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 0.9px;
 }
 
-h6.name {
+h6.name-label {
   margin-top: 20px;
 }
 
@@ -175,12 +171,8 @@ h6.name {
   margin-top: 15px;
 }
 
-.part1{
-    display: flex;
-    justify-content: space-between;
-}
-
-.part2{
+.first-part,
+.sec-part {
     display: flex;
     justify-content: space-between;
 }
