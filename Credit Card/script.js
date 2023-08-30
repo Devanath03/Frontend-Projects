@@ -20,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   validThruInput.addEventListener("input", function () {
-        if(this.value.length===2 && event.inputType !== "deleteContentBackward")
-        {
-                this.value+="/";
+        if(this.value.length===2 && event.inputType !== "deleteContentBackward"){
+           this.value+="/";
         }
     validThruDisplay.textContent = this.value ? formatValidThru(this.value) : "00/00";
   });
@@ -32,11 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   cvvInput.addEventListener("input", function () {
+        if(event.inputType==="click"){
+           container.classList.toggle("is-flipped");//calling css defined class    
+        }
     cvvDisplay.textContent = this.value || "000";
-  });
-
-  cvvInput.addEventListener("click", () =>{
-        container.classList.toggle("is-flipped");//calling css defined class
   });
 
   function formatCardNumber(value) {
