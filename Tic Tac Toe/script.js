@@ -1,153 +1,149 @@
-const resetDiv = document.querySelector(".reset");
-const statusDiv = document.querySelector(".status");
-const cellDivs = document.querySelectorAll(".game-cell");
+let matrix = null;
+let isXNext = true;
+let isGameOver = false;
 
-
-// game variable
-let gameIsLive = true;
-let xIsNext = true;
-let winner = null;
-
-//constant variable
-const xSymbol = "X";
-const oSymbol = "O";
-
-
-// function
-
-const letterToSymbol = (letter) => {
-    return (letter === 'x' ? xSymbol : oSymbol);
+function stopTheGame() {
+    let BOARD = document.getElementById('tic_tac_toe')
+    BOARD.innerHTML = '';
+    BOARD.classList = '';
+    document.getElementsByClassName('current_player')[0].innerHTML = '';
+    document.getElementById('restart').style.display = 'block';
+    document.getElementsByClassName('game_over')[0].style.display = 'block';
 }
 
-const isWinner = (content) =>{
-    gameIsLive = false;
-    winner = content;
+function drawStrikeLine(value) {
+    document.getElementById('tic_tac_toe').classList.add(value);
+}
 
-    if(winner === 'x'){
-        statusDiv.innerHTML = `${letterToSymbol(winner)} is Won!`;
-    }
-    else{
-        statusDiv.innerHTML = `<span> ${letterToSymbol(winner)} is Won! </span>`;
+function checkMatchActive() {
+    const isGameDone = checkMatchOver();
+    if (isGameDone) {
+        let game_over_el = document.getElementsByClassName('game_over')[0];
+        game_over_el.innerHTML = isGameDone;
+        isGameOver = true;
+        setTimeout(() => {
+            stopTheGame();
+        }, 2000);
     }
 }
 
-const checkGameStatus = () =>{
-    const topLeft = cellDivs[0].classList[1];
-    const topMiddle = cellDivs[1].classList[1];
-    const topRight = cellDivs[2].classList[1];
-    const middleLeft = cellDivs[3].classList[1];
-    const middleMiddle = cellDivs[4].classList[1];
-    const middleRight = cellDivs[5].classList[1];
-    const bottomLeft = cellDivs[6].classList[1];
-    const bottomMiddle = cellDivs[7].classList[1];
-    const bottomRight = cellDivs[8].classList[1];
-
-    // console.log(topLeft, topMiddle, topRight, middleLeft, middleMiddle, middleRight, bottomLeft, bottomMiddle, bottomRight);
-
-    if(topLeft && topLeft === topMiddle && topLeft === topRight){
-       isWinner(topLeft);
-       cellDivs[0].classList.add('won');
-       cellDivs[1].classList.add('won');
-       cellDivs[2].classList.add('won');
-    }
-    else if(middleLeft && middleLeft === middleMiddle && middleLeft === middleRight){
-        isWinner(middleLeft);
-        cellDivs[3].classList.add('won');
-        cellDivs[4].classList.add('won');
-        cellDivs[5].classList.add('won');
-    }
-    else if(bottomLeft && bottomLeft === bottomMiddle && bottomLeft === bottomRight){
-        isWinner(bottomLeft);
-        cellDivs[6].classList.add('won');
-        cellDivs[7].classList.add('won');
-        cellDivs[8].classList.add('won');
-    }
-
-    else if(topLeft && topLeft === middleLeft && topLeft === bottomLeft){
-        isWinner(topLeft);
-        cellDivs[0].classList.add('won');
-        cellDivs[3].classList.add('won');
-        cellDivs[6].classList.add('won');
-    }
-    else if(topMiddle && topMiddle === middleMiddle && topMiddle === bottomMiddle){
-        isWinner(topMiddle);
-        cellDivs[1].classList.add('won');
-        cellDivs[4].classList.add('won');
-        cellDivs[7].classList.add('won');
-    }
-    else if(topRight && topRight === middleRight && topRight === bottomRight){
-        isWinner(topRight);
-        cellDivs[2].classList.add('won');
-        cellDivs[5].classList.add('won');
-        cellDivs[8].classList.add('won');
-    }
-
-    else if(topLeft && topLeft === middleMiddle && topLeft === bottomRight){
-        isWinner(topLeft);
-        cellDivs[0].classList.add('won');
-        cellDivs[4].classList.add('won');
-        cellDivs[8].classList.add('won');
-    }
-    else if(topRight && topRight === middleMiddle && topRight === bottomLeft){
-        isWinner(topRight);
-        cellDivs[2].classList.add('won');
-        cellDivs[4].classList.add('won');
-        cellDivs[6].classList.add('won');
-    }
-
-    else if(topLeft && topMiddle && topRight && middleLeft && middleMiddle && middleRight && bottomLeft && bottomMiddle && bottomRight){
-        gameIsLive = false;
-        statusDiv.innerHTML = `Game Is Tied!`;
-    } 
-    
-    else{
-        if(xIsNext){
-            xIsNext = ! xIsNext;
-            statusDiv.innerHTML = `${oSymbol} is next!`;
-        }
-        else{
-            xIsNext = !xIsNext;
-            statusDiv.innerHTML = `${xSymbol} is next!`;
+function handleBoxClick(i, j) {
+    checkMatchActive();
+    if (!isGameOver) {
+        let data = matrix;
+        if (isXNext) {
+            if (!data[i][j]) {
+                data[i][j] = 'X';
+                document.getElementsByClassName(`box_${i}_${j}`)[0].innerHTML = 'X';
+                document.getElementsByClassName(`box_${i}_${j}`)[0].classList.add('x_class');
+                isXNext = false;
+                loadCurrentPlayer();
+                setTimeout(() => {
+                    checkMatchActive();
+                }, 100);
+            }
+        } else {
+            if (!data[i][j]) {
+                data[i][j] = 'O';
+                document.getElementsByClassName(`box_${i}_${j}`)[0].innerHTML = 'O';
+                document.getElementsByClassName(`box_${i}_${j}`)[0].classList.add('o_class');
+                isXNext = true;
+                loadCurrentPlayer();
+                setTimeout(() => {
+                    checkMatchActive();
+                }, 100);
+            }
         }
     }
-};
-
-
-// event handler
-
-const handleReset = () =>{
-    xIsNext = true;
-    gameIsLive = true;
-    winner = null;
-    statusDiv.innerHTML = `${xSymbol} is next!`;
-
-    for(const cellDiv of cellDivs){
-        cellDiv.classList.remove('x');
-        cellDiv.classList.remove('o');
-        cellDiv.classList.remove('won');
+}
+function loadTheGame() {
+    matrix = [
+        ['', '', ''],
+        ['', '', ''],
+        ['', '', '']
+    ];
+    isXNext = true;
+    isGameOver = false;
+    document.getElementById('restart').style.display = 'none';
+    document.getElementById('restart').style.display = 'none';
+    document.getElementsByClassName('game_over')[0].style.display = 'none';
+    const TIC_TAC_TOE = document.getElementById('tic_tac_toe');
+    for (let i = 0; i < matrix.length; i++) {
+        let temp = matrix[i];
+        let outerBox = document.createElement('div');
+        outerBox.setAttribute('class', 'box-outer');
+        for (let j = 0; j < temp.length; j++) {
+            let box = document.createElement('div');
+            box.innerHTML = temp[j];
+            box.setAttribute('class', `box box_${i}_${j}`);
+            box.addEventListener('click', () => {
+                handleBoxClick(i, j);
+            });
+            outerBox.appendChild(box);
+        }
+        TIC_TAC_TOE.appendChild(outerBox);
     }
-};
+    loadCurrentPlayer();
+}
 
-const handleCellClick = (e) =>{
-    const classList = e.target.classList;
+function loadCurrentPlayer() {
+    let el = document.getElementsByClassName('current_player')[0];
+    el.innerHTML = isXNext ? 'X' : 'O';
+}
 
-    if(classList[1]==='x' || classList==='o' || gameIsLive==false){
-        return;
+function checkMatchOver() {
+    for (let i = 0; i < matrix.length; i++) {
+        if (matrix[i][0] && matrix[i][1] && matrix[i][2] && (matrix[i][0] === matrix[i][1] && matrix[i][1] === matrix[i][2])) {
+            if (i === 0) {
+                drawStrikeLine(`top_strike_${matrix[i][0]}`,);
+            }
+            if (i === 1) {
+                drawStrikeLine(`middle_strike_${matrix[i][0]}`);
+            }
+            if (i === 2) {
+                drawStrikeLine(`bottom_strike_${matrix[i][0]}`);
+            }
+            return matrix[i][1] + ' is the winner';
+        }
+    }
+    let arr0 = [];
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < matrix.length; i++) {
+        arr0.push(matrix[i][0]);
+        arr1.push(matrix[i][1]);
+        arr2.push(matrix[i][2]);
+    }
+    if (arr0.every(el => el === 'X') || arr0.every(el => el === 'O')) {
+        drawStrikeLine(`left_vertical_strike_${arr0[0]}`);
+        return arr0[0] + ' is the winner';
+    }
+    if (arr1.every(el => el === 'X') || arr1.every(el => el === 'O')) {
+        drawStrikeLine(`middle_vertical_strike_${arr1[1]}`);
+        return arr1[0] + ' is the winner';
+    }
+    if (arr2.every(el => el === 'X') || arr2.every(el => el === 'O')) {
+        drawStrikeLine(`right_vertical_strike_${arr2[0]}`);
+        return arr2[0] + ' is the winner';
     }
 
-    if(xIsNext){
-        classList.add('x');
-        checkGameStatus();
+    let arrCrossX = [];
+    for (let i = 0; i < matrix.length; i++) {
+        arrCrossX.push(matrix[i][i]);
     }
-    else{
-        classList.add('o');
-        checkGameStatus();
+    if (arrCrossX.every(el => el === 'X') || arrCrossX.every(el => el === 'O')) {
+        drawStrikeLine(`x_cross_strike_${arrCrossX[0]}`);
+        return arrCrossX[0] + ' is the winner';
     }
-};
 
-// event listner
-resetDiv.addEventListener('click',handleReset);
-
-for(const cellDiv of cellDivs){
-    cellDiv.addEventListener('click',handleCellClick);
+    let index = 2;
+    let arrCrossY = [];
+    for (let i = 0; i < matrix.length; i++) {
+        arrCrossY.push(matrix[i][index]);
+        --index;
+    }
+    if (arrCrossY.every(el => el === 'X') || arrCrossY.every(el => el === 'O')) {
+        drawStrikeLine(`y_cross_strike_${arrCrossY[0]}`);
+        return arrCrossY[0] + ' is the winner';
+    }
 }
