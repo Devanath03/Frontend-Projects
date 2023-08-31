@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+//document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".container");
   const cardNumberInput = document.querySelector(".card-num input");
   const cardNumberDisplay = document.querySelector(".number");
@@ -49,4 +49,4 @@ document.addEventListener("DOMContentLoaded", function () {
     const year = normalizedValue.slice(3, 5);
     return `${month}/${year}`;
   }      
-});
+//});
