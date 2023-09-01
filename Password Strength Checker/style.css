@@ -98,19 +98,19 @@ body {
   color: aliceblue;
 }
 
-.container.container.weak .strengthMeter::after {
+.container.weak .strengthMeter::after {
   content: "Weak Password";
   color: #f00;
   filter: drop-shadow(0 0 5px#f00);
 }
 
-.container.container.container.moderate .strengthMeter::after {
+.container.moderate .strengthMeter::after {
   content: "Moderate Password";
   color: #eedc3d;
   filter: drop-shadow(0 0 5px#eedc3d);
 }
 
-.container.container.container.container.strong .strengthMeter::after {
+.container.strong .strengthMeter::after {
   content: "Strong Password";
   color: #18e605;
   filter: drop-shadow(0 0 5px#18e605);
