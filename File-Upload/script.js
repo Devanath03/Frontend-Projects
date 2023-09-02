@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
         const showfileboxElem = document.createElement("div");
         showfileboxElem.classList.add("showfilebox");
 
-        
+        //Creating left side type of the file
         const leftElem = document.createElement("div");
         leftElem.classList.add("left");
         const fileTypeElem = document.createElement("span");
