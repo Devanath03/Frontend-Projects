@@ -34,7 +34,7 @@ window.addEventListener("load", () => {
         const rightElem = document.createElement("div");
         rightElem.classList.add("right");
         showfileboxElem.append(rightElem);
-        //
+        //Creating span for cross symbol
         const crossElem = document.createElement("span");
         crossElem.innerHTML = "&#215;";
         rightElem.append(crossElem);
