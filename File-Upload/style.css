@@ -12,8 +12,8 @@
     padding: 15px;
     width: 100%;
     min-height: 100vh;
-    background: #5691d5;
-    background: linear-gradient(282deg, #009dff 0%, #54bdff);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .box{
@@ -27,8 +27,9 @@
 .upload-area-title{
     text-align: center;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
+    color: #18a7ff;
 }
 
 .uploadlabel{
@@ -46,12 +47,12 @@
 .uploadlabel span{
     margin-top: 8px;
     font-size: 70px;
-    color: #18a7ff;
+    color: #94bbe9;
 }
 
 .uploadlabel p{
     font-size: 20px;
-    color: #18a7ff;
+    color: #94bbe9;
     font-weight: 800;
     font-family: cursive;
     margin-bottom: 15px;
@@ -70,8 +71,8 @@
     justify-content: space-between;
     margin: 10px 0;
     padding: 10px 15px;
-    box-shadow: #0000000d 0px 0px 0px 3px,
-    #d1d5db3d 0px 0px 0px 3px inset; 
+    box-shadow: black; 
+    border: #a5a5a5 solid 2px;
 }
 
 .showfilebox .left{
@@ -94,7 +95,7 @@
 .left h3{
     font-weight: 600;
     font-size: 18px;
-    color: #292F42;
+    color: #18a7ff;
     margin: 0;
 }
 
