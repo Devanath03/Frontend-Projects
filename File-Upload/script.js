@@ -20,21 +20,26 @@ window.addEventListener("load", () => {
         //Creating left side type of the file
         const leftElem = document.createElement("div");
         leftElem.classList.add("left");
+
         //Creating span element for adding it inside div
         const fileTypeElem = document.createElement("span");
         fileTypeElem.classList.add("filetype");
         fileTypeElem.innerHTML = fileType;
         leftElem.append(fileTypeElem);
+
         //Creating h3 element for indcating title name
         const filetitleElem = document.createElement("h3");
         filetitleElem.innerHTML = fileName;
         leftElem.append(filetitleElem);
+
         //Appending entire left element to the created div file-uploading
         showfileboxElem.append(leftElem);
+
         //Creating div in right side for cross mark
         const rightElem = document.createElement("div");
         rightElem.classList.add("right");
         showfileboxElem.append(rightElem);
+        
         //Creating span for cross symbol
         const crossElem = document.createElement("span");
         crossElem.innerHTML = "&#215;";
