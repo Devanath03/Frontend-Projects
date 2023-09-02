@@ -30,10 +30,11 @@ window.addEventListener("load", () => {
         leftElem.append(filetitleElem);
         //Appending entire left element to the created div file-uploading
         showfileboxElem.append(leftElem);
-        //
+        //Creating div in right side for cross mark
         const rightElem = document.createElement("div");
         rightElem.classList.add("right");
         showfileboxElem.append(rightElem);
+        //
         const crossElem = document.createElement("span");
         crossElem.innerHTML = "&#215;";
         rightElem.append(crossElem);
