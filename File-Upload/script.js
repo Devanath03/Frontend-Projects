@@ -40,6 +40,7 @@ window.addEventListener("load", () => {
         rightElem.append(crossElem);
         filewrapper.append(showfileboxElem);
 
+        //for removing the added file
         crossElem.addEventListener("click", () => {
             filewrapper.removeChild(showfileboxElem);
         })
