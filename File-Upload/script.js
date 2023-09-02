@@ -24,10 +24,13 @@ window.addEventListener("load", () => {
         fileTypeElem.classList.add("filetype");
         fileTypeElem.innerHTML = fileType;
         leftElem.append(fileTypeElem);
+        //Creating h3 element for indcating title name
         const filetitleElem = document.createElement("h3");
         filetitleElem.innerHTML = fileName;
         leftElem.append(filetitleElem);
+        //Appending entire left element to the created div file-uploading
         showfileboxElem.append(leftElem);
+        //
         const rightElem = document.createElement("div");
         rightElem.classList.add("right");
         showfileboxElem.append(rightElem);
