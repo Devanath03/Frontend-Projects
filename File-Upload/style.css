@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
 .wrapper{
     display:flex;
     justify-content: center;
@@ -12,9 +17,7 @@
     padding: 15px;
     width: 100%;
     min-height: 100vh;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}
+} 
 
 .box{
     max-width: 500px;

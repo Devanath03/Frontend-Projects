@@ -13,11 +13,11 @@ window.addEventListener("load", () => {
 
     const fileshow = (fileName, fileType) => {
         
-        //For creating a new div for file-uploading
+         //For creating a new div for file-uploading
         const showfileboxElem = document.createElement("div");
         showfileboxElem.classList.add("showfilebox");
 
-        //Creating left side type of the file
+        /*Creating left side type of the file
         const leftElem = document.createElement("div");
         leftElem.classList.add("left");
 
@@ -43,12 +43,23 @@ window.addEventListener("load", () => {
         //Creating span for cross symbol
         const crossElem = document.createElement("span");
         crossElem.innerHTML = "&#215;";
-        rightElem.append(crossElem);
-        filewrapper.append(showfileboxElem);
+        rightElem.append(crossElem);*/
+
+        showfileboxElem.innerHTML = `
+            <div class="left">
+                <span class="filetype">${fileType}</span>
+                <h3>${fileName}</h3>
+            </div>
+            <div class="right">
+                <span>&#215;</span>
+            </div>
+        `;
+        filewrapper.appendChild(showfileboxElem);
 
         //for removing the added file
+        const crossElem = showfileboxElem.querySelector(".right span");
         crossElem.addEventListener("click", () => {
             filewrapper.removeChild(showfileboxElem);
-        })
+        });
     }
-})
+});
