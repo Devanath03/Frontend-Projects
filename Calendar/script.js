@@ -58,22 +58,22 @@ prevNextIcon.forEach(icon => {
         }
         renderCalendar();
     });
-});
 
-showDateInputDialog = () => {
-    const formatDate = prompt("Enter a Date (DD-MM-YYYY):");
-    const format = formatDate.split("-");
-    let len = format.length;
-    const inputDate = format[len-1]+"-"+format[len-2]+"-"+format[len-3];
-    if (inputDate) {
-        const selectedDate = new Date(inputDate);
-        if (!isNaN(selectedDate.getTime())) {
-            // Update currentYear and currentMonth based on the selected date
-            currYear = selectedDate.getFullYear();
-            currMonth = selectedDate.getMonth();
-            renderCalendar();
-        } else {
-            alert("Invalid date format. Please use DD-MM-YYYY.");
+    showDateInputDialog = () => {
+        const formatDate = prompt("Enter a Date (DD-MM-YYYY):");
+        const format = formatDate.split("-");
+        let len = format.length;
+        const inputDate = format[len-1]+"-"+format[len-2]+"-"+format[len-3];
+        if (inputDate) {
+            const selectedDate = new Date(inputDate);
+            if (!isNaN(selectedDate.getTime())) {
+                // Update currentYear and currentMonth based on the selected date
+                currYear = selectedDate.getFullYear();
+                currMonth = selectedDate.getMonth();
+                renderCalendar();
+            } else {
+                alert("Invalid date format. Please use DD-MM-YYYY.");
+            }
         }
-    }
-};
+    };
+});
