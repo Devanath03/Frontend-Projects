@@ -31,7 +31,7 @@ document.body.addEventListener('click', () => {
     pc.uniforms.uPointSize.value = 1 + Math.random() * 10;
 });
 
-document.body.addEventListener('click', () => {
+document.body.addEventListener('click', () => { 
     pc.uniforms.uColor.value.set(Math.random() * 0xffffff);
     pc.uniforms.uCoordScale.value = 0.001 + Math.random() * 2;
     pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001;
