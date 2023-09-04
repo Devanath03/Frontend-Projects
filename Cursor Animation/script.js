@@ -16,7 +16,7 @@ const pc = particlesCursor({
     sleepTimeCoefY: 0.002
 });
 
-// Update particle position based on cursor movement
+// Update particle position based on cursor movement 
 document.addEventListener('mousemove', (event) => {
     const mouseX = event.clientX / window.innerWidth;
     const mouseY = 1 - event.clientY / window.innerHeight;
