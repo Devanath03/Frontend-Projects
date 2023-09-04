@@ -8,7 +8,7 @@ const pc = particlesCursor({
     coordScale: 0.5,
     noiseIntensity: 0.005,
     noiseTimeCoef: 0.0001,
-    pointSize: 2, // Lighter particle thickness
+    pointSize: 2, // Lighter particle thickness 
     pointDecay: 0.0025,
     sleepRadiusX: 250,
     sleepRadiusY: 250,
