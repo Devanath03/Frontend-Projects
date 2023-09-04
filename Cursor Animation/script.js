@@ -37,7 +37,7 @@ document.body.addEventListener('click', () => {
     pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001;
     pc.uniforms.uPointSize.value = 1 + Math.random() * 10;
     
-    // Reset particle parameters after 2 seconds
+    // Reset particle parameters after 2 seconds 
     setTimeout(() => {
         pc.uniforms.uColor.value.set(0x000000); // Set color to black (invisible)
         pc.uniforms.uCoordScale.value = 0.001;
