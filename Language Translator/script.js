@@ -80,7 +80,7 @@ const languages = {
     "sw-SZ": "Swahili",
     "ta-LK": "Tamil",
     "te-IN": "Telugu",
-    "tet-TL": "Tetum",
+    "tet-TL": "Tetum", 
     "tg-TJ": "Tajik", 
     "th-TH": "Thai", 
     "ti-TI": "Tigrinya",
