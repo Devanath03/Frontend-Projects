@@ -82,7 +82,7 @@ const languages = {
     "te-IN": "Telugu",
     "tet-TL": "Tetum",
     "tg-TJ": "Tajik",
-    "th-TH": "Thai",
+    "th-TH": "Thai", 
     "ti-TI": "Tigrinya",
     "tk-TM": "Turkmen",
     "tl-PH": "Tagalog",
