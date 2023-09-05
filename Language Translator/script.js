@@ -90,7 +90,7 @@ const languages = {
     "to-TO": "Tongan",   
     "tr-TR": "Turkish",
     "uk-UA": "Ukrainian",
-    "uz-UZ": "Uzbek",
+    "uz-UZ": "Uzbek", 
     "vi-VN": "Vietnamese",
     "wo-SN": "Wolof",
     "xh-ZA": "Xhosa",
