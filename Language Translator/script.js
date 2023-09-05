@@ -87,7 +87,7 @@ const languages = {
     "tk-TM": "Turkmen",
     "tl-PH": "Tagalog",
     "tn-BW": "Tswana",
-    "to-TO": "Tongan",  
+    "to-TO": "Tongan",   
     "tr-TR": "Turkish",
     "uk-UA": "Ukrainian",
     "uz-UZ": "Uzbek",
