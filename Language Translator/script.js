@@ -145,7 +145,7 @@ const languages = {
       });
   });
   
-  exchageIcon.addEventListener("click", () => {
+  exchageIcon.addEventListener("click", () => { 
     let tempText = fromText.value,
       tempLang = selectTag[0].value;
     fromText.value = toText.value;
