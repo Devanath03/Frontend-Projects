@@ -45,7 +45,7 @@ const languages = {
     "ku-TR": "Kurdish",
     "ky-KG": "Kyrgyz",
     "la-VA": "Latin",
-    "lo-LA": "Lao",
+    "lo-LA": "Lao", 
     "lv-LV": "Latvian",
     "men-SL": "Mende",
     "mg-MG": "Malagasy",
