@@ -56,7 +56,7 @@ const languages = {
     "ne-NP": "Nepali",
     "niu-NU": "Niuean",
     "nl-NL": "Dutch",
-    "no-NO": "Norwegian",
+    "no-NO": "Norwegian", 
     "ny-MW": "Nyanja",
     "ur-PK": "Pakistani",
     "pau-PW": "Palauan",
