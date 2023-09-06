@@ -61,7 +61,7 @@ const languages = {
     "ur-PK": "Pakistani",
     "pau-PW": "Palauan",
     "pa-IN": "Panjabi",
-    "ps-PK": "Pashto",
+    "ps-PK": "Pashto", 
     "pis-SB": "Pijin",
     "pl-PL": "Polish",
     "pt-PT": "Portuguese",
