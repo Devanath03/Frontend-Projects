@@ -43,7 +43,7 @@ const languages = {
     "kn-IN": "Kannada",
     "ko-KR": "Korean",
     "ku-TR": "Kurdish",
-    "ky-KG": "Kyrgyz",
+    "ky-KG": "Kyrgyz", 
     "la-VA": "Latin",
     "lo-LA": "Lao", 
     "lv-LV": "Latvian",
