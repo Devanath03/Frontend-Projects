@@ -1,0 +1,64 @@
+/*javascriptpro_*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+margin:0;   
+padding:0;
+box-sizing:border-box;
+} 
+
+body{
+background:#2f2f2f; 
+font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+padding:25px 20px 20px 20px; 
+width:500px;
+background:#6367B0;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:7px;
+}
+
+.container .txt1{
+color:white; 
+font-size:30px;
+}
+
+.container .txt2{
+color:white;
+font-size:14px;
+margin-top:7px;
+}
+
+.container input{
+all:unset;
+height:45px;
+width:95%;
+background:white;
+border-radius:3px;
+padding-left:10px;
+margin-top:15px;
+font-size:18px;
+}
+
+.container .fact-box{
+padding:18px 20px 20px 20px;        
+}
+
+.container .fact-box h3{
+color:white;       
+}
+
+.container .fact-box p{
+color:white;    
+margin-top:8px;
+font-size:14px;
+}
+
+::selection{
+background:white;
+color:black;
+}
