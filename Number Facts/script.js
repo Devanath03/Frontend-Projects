@@ -1,4 +1,3 @@
-
 let userInput = document.querySelector('.container .userInput');  
 let fact = document.querySelector('.container .fact-box p');
 
