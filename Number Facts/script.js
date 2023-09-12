@@ -12,10 +12,10 @@ let number = userInput.value;
     })
 }
 
-userInput.addEventListener('keyup',(e)=>{
- if(e.target.value != '' && e.key == "Enter"){
+/*userInput.addEventListener('onclick',(e)=>{
+ if(e.key == "Enter"){
    getFact();     
  }  
-})
+})*/
 
 getFact();
