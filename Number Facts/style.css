@@ -18,6 +18,7 @@ font-family: 'Montserrat', sans-serif;
 padding:25px 20px 20px 20px; 
 width:500px;
 background:#6367B0;
+position: absolute;
 border-radius:7px;
 }
 
