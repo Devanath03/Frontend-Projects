@@ -66,7 +66,7 @@ color:black;
 
 .container button{
     width: 50%;
-    height: 45px;
+    height: 47px;
     border-radius: 3px;
     border: #fff;
     margin-left: 110px;
@@ -74,4 +74,8 @@ color:black;
     font-size: larger;
     font-weight: bolder;
     color: #6367B0;
+}
+
+.container button:hover{
+    border: 1px solid #6367B0;
 }
