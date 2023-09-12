@@ -17,4 +17,4 @@ let number = userInput.value;
    getFact();     
  }  
 })
-getFact();
+getFact();*/
