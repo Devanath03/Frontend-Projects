@@ -16,6 +16,6 @@ let number = userInput.value;
  if(e.key == "Enter"){
    getFact();     
  }  
-})*/
+})
 
 getFact();
