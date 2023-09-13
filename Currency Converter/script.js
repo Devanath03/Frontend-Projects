@@ -191,7 +191,7 @@ function loadFlag(element) {
       let imgTag = element.parentElement.querySelector("img");
       imgTag.src = `https://flagcdn.com/48x36/${country_list[
         code
-      ].toLowerCase()}.png`;
+      ].toLowerCase()}.png`; //https://flagcdn.com/48x36/in.png
     }
   }
 }
