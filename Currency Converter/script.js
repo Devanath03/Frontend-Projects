@@ -160,7 +160,7 @@ let country_list = {
   ZWD: "ZW"
 };
 
-let apiKey = "";
+let apiKey = "";  //we want insert our api key
 
 const dropList = document.querySelectorAll("form select"),
   fromCurrency = document.querySelector(".from select"),
