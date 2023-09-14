@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
         //Creating span element for adding it inside div 
         const fileTypeElem = document.createElement("span"); 
         fileTypeElem.classList.add("filetype"); 
-        fileTypeElem.innerHTML = fileType;
+        fileTypeElem.innerHTML = fileType; 
         leftElem.append(fileTypeElem);
 
         //Creating h3 element for indcating title name
