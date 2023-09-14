@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
         leftElem.classList.add("left"); 
 
         //Creating span element for adding it inside div 
-        const fileTypeElem = document.createElement("span");
+        const fileTypeElem = document.createElement("span"); 
         fileTypeElem.classList.add("filetype");
         fileTypeElem.innerHTML = fileType;
         leftElem.append(fileTypeElem);
