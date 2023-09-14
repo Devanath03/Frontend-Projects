@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
 
     const fileshow = (fileName, fileType) => {
         
-         //For creating a new div for file-uploading
+         //For creating a new div for file-uploading 
         const showfileboxElem = document.createElement("div");
         showfileboxElem.classList.add("showfilebox");
 
