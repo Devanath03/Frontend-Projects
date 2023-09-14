@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
         /*Creating left side type of the file 
         const leftElem = document.createElement("div"); 
-        leftElem.classList.add("left");
+        leftElem.classList.add("left"); 
 
         //Creating span element for adding it inside div
         const fileTypeElem = document.createElement("span");
