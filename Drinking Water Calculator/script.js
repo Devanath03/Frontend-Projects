@@ -49,3 +49,4 @@ function updateBigGlass(){
         liters.innerText =`${4 - (250 * fullGlass / 1000)}L`
     }
 }
+
