@@ -1,4 +1,4 @@
-const APIKEY = "04c35731a5ee918f014970082a0088b1";
+const APIKEY = "";  //api key needs to be here 
 const APIURL = `https://api.themoviedb.org/3/discover/movie?api_key=${APIKEY}`;
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI =
