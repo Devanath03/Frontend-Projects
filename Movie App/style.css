@@ -71,6 +71,7 @@ h1 {
     font: inherit;
     color: #e3e3e3;
   }
+  
   .search__button {
     display: grid;
     place-items: center;
@@ -89,7 +90,7 @@ h1 {
     font-size: 25px;
     color: #7378c5;
   }
-  
+
   .icon:hover{
     color: #fff;
   }
