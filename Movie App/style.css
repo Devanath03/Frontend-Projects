@@ -62,6 +62,7 @@ h1 {
     outline: none;
     font-size: large;
   }
+  
   .search__input {
     width: 0;
     transition: width 0.5s;
@@ -71,7 +72,7 @@ h1 {
     font: inherit;
     color: #e3e3e3;
   }
-  
+
   .search__button {
     display: grid;
     place-items: center;
