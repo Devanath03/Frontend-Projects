@@ -1,21 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech Convertor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <title>Text to Speech Converter</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Text to Speech Convertor</h1>
-        <textarea class="textarea"></textarea>
-        <!-- speaker unicode -->
-        <div class="speakerIcon">&#128264;</div>
-        <button class="textToSpeechBtn">Text to Speech</button>
+    <div class="wrapper">
+        <header>Text To Speech Converter</header>
+        <form action="#">
+            <div class="row">
+                <label>Enter Text</label>
+                <textarea></textarea>
+            </div>
+            <div class="row">
+                <label>Select Voice</label>
+                <div class="outer">
+                    <select></select>
+                </div>
+            </div>
+            <button>Convert To Speech</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,39 +1,57 @@
-const textareaEl = document.querySelector(".textarea");
+const textarea = document.querySelector("textarea"),
+    voiceList = document.querySelector("select"),
+    speechBtn = document.querySelector("button");
 
-const textToSpeechBtnEl = document.querySelector(".textToSpeechBtn");
+let synth = speechSynthesis, //it is an web speech api for interfacing of speech service
+    isSpeaking = true;
 
-const speakerIconEl = document.querySelector(".speakerIcon");
+voices();
 
-let speaking = true;
+function voices() {
+    for (let voice of synth.getVoices()) {
+        let selected = voice.name === "Google US English" ? "selected" : "";
+        let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
+        voiceList.insertAdjacentHTML("beforeend", option);
+    }
+}
 
+synth.addEventListener("voiceschanged", voices);
 
-const textToSpeech = () => {
-  const synth = window.speechSynthesis;
-  const text = textareaEl.value;
-
-  if (!synth.speaking && text) {
-    const utterance = new SpeechSynthesisUtterance(text);
+function textToSpeech(text) {
+    let utterance = new SpeechSynthesisUtterance(text);
+    for (let voice of synth.getVoices()) {
+        if (voice.name === voiceList.value) {
+            utterance.voice = voice;
+        }
+    }
     synth.speak(utterance);
-  }
+}
 
-    if (synth.speaking && speaking) {
-      textToSpeechBtnEl.innerText = "Pause";
-      synth.resume();
-      speaking = false;
-    speakerIconEl.innerHTML = "&#128266;";
-    } else {
-      textToSpeechBtnEl.innerText = "Resume";
-      synth.pause();
-      speaking = true;
-    speakerIconEl.innerHTML = "&#128264;";
+speechBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (textarea.value !== "") {
+        if (!synth.speaking) {
+            textToSpeech(textarea.value);
+        }
+        if (textarea.value.length > 80) {
+            setInterval(() => {
+                if (!synth.speaking && !isSpeaking) {
+                    isSpeaking = true;
+                    speechBtn.innerText = "Convert To Speech";
+                } else {
+                }
+            }, 500);
+            if (isSpeaking) {
+                synth.resume();
+                isSpeaking = false;
+                speechBtn.innerText = "Pause Speech";
+            } else {
+                synth.pause();
+                isSpeaking = true;
+                speechBtn.innerText = "Resume Speech";
+            }
+        } else {
+            speechBtn.innerText = "Convert To Speech";
+        }
     }
-
-  setInterval(() => {
-    if (!synth.speaking && !speaking) {
-      speaking = true;
-      textToSpeechBtnEl.innerText = "Text to Speech";
-    }
-  });
-};
-
-textToSpeechBtnEl.addEventListener("click", textToSpeech);
+});
