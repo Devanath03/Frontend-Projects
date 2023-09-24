@@ -6,7 +6,7 @@ const SEARCHAPI =
 
 
 const main = document.getElementById("content");
-const form = document.getElementById("form");
+const form = document.querySelector(".form");
 const search = document.getElementById("search");
 
 // initially get fav movies
@@ -63,9 +63,12 @@ function getClassByRate(vote) {
 }
 
 form.addEventListener("submit", (e) => {
+
     e.preventDefault();
 
     const searchTerm = search.value;
+
+    console.log(search.value);
 
     if (searchTerm) {
         getMovies(SEARCHAPI + searchTerm);
