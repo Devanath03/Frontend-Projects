@@ -80,7 +80,7 @@ h1 {
     transition: color 0.25s;
     margin-right: 10px;
   }
-  
+
   #form:focus-within input {
     width: 200px;
   }
@@ -89,6 +89,7 @@ h1 {
     font-size: 25px;
     color: #7378c5;
   }
+  
   .icon:hover{
     color: #fff;
   }
