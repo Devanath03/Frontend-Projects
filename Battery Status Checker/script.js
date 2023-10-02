@@ -70,7 +70,7 @@ navigator.getBattery().then((battery) => {
         (chargingBar.style.animationIterationCount = "initial"));
   }
 
-  //   updating the Discharging Information
+  //   updating the Discharging Information changes
 
   function updateDischargingInfo() {
     const dischargeTime = parseInt(battery.dischargingTime / 60) ? true : false;
@@ -83,3 +83,4 @@ navigator.getBattery().then((battery) => {
       : (otherInfo.style.display = "none");
   }
 });
+
