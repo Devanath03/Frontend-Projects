@@ -71,7 +71,7 @@ navigator.getBattery().then((battery) => {
   }
 
   //   updating the Discharging Information changes 
- 
+
   function updateDischargingInfo() {
     const dischargeTime = parseInt(battery.dischargingTime / 60) ? true : false;
 
