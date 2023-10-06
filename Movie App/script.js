@@ -72,7 +72,6 @@ form.addEventListener("submit", (e) => {
 
     if (searchTerm) {
         getMovies(SEARCHAPI + searchTerm);
-
         search.value = "";
     }
 });
