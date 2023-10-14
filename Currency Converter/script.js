@@ -160,7 +160,7 @@ let country_list = {
   ZWD: "ZW"
 };
 
-let apiKey = "";  //we want insert your api key from https://www.exchangerate-api.com/ 
+let apiKey = "08a90255064a402b364d6c0b";  //we want insert your api key from https://www.exchangerate-api.com/ 
 
 const dropList = document.querySelectorAll("form select"),
   fromCurrency = document.querySelector(".from select"),
