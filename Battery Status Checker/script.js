@@ -7,7 +7,7 @@ const chargingBar = document.querySelector(".charging_bar");
 const dischargingTime = document.querySelector(".discharging_time");
 
 const otherInfo = document.querySelector(".other_info");
-
+ 
 // Promise is called by battery
  
 navigator.getBattery().then((battery) => {
