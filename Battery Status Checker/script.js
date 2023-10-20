@@ -27,7 +27,7 @@ navigator.getBattery().then((battery) => {
 
   updateAllBatteryInfo();
 
-  //  Event Listener, when the charging status changes 
+  //  Event Listener, when the charging status changes
 
   //  it checks that does your device is plugged in or not
 
