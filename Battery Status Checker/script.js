@@ -90,4 +90,3 @@ navigator.getBattery().then((battery) => {
 
 
 
-
