@@ -83,4 +83,4 @@ navigator.getBattery().then((battery) => {
         (otherInfo.style.display = "flex"))
       : (otherInfo.style.display = "none");
   }
-});
+}); 
