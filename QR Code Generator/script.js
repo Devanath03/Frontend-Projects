@@ -38,3 +38,4 @@ download.addEventListener("click", () => {
             URL.revokeObjectURL(download_link.href);
         });
 });
+
