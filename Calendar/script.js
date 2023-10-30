@@ -77,3 +77,4 @@ prevNextIcon.forEach(icon => {
         }
     };
 });
+
