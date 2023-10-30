@@ -77,11 +77,3 @@ prevNextIcon.forEach(icon => {
         }
     };
 });
-
-
-
-
-
-
-
-
