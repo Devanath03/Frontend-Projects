@@ -86,3 +86,7 @@ margin-top:15px;
 background:rgb(100, 149, 237, 0.8);
 color:white;
 }
+
+.download{
+    opacity: 0;
+}
