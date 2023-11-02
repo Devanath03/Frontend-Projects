@@ -77,6 +77,3 @@ prevNextIcon.forEach(icon => {
         }
     };
 });
-
-
-
