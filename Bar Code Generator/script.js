@@ -17,12 +17,4 @@ generateBtn.addEventListener('click', () => {
         if (userInput.value != '') {
                 generateBarcode();
         }
-})
-
-
-
-
-
-
-
-
+});
