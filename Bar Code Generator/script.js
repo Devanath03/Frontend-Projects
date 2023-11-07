@@ -18,10 +18,3 @@ generateBtn.addEventListener('click', () => {
                 generateBarcode();
         }
 });
-
-
-
-
-
-
-
