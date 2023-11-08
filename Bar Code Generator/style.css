@@ -18,40 +18,40 @@ body{
     left:50%;
     transform:translate(-50%,-50%);
     border-radius:10px;
-width:355px;
-height: 200px;
-padding-bottom:5px;
+    width:355px;
+    height: 200px;
+    padding-bottom:5px;
 }
 
 .container.active{
-padding-bottom:35px;   
-height: 480px;    
+    padding-bottom:35px;   
+    height: 480px;    
 }
 
 
 .container .app-title{
-font-size:16px;
-color:#222;
+    font-size:16px;
+    color:#222;
 }
 
 .container .app-title i{
-padding-right:3px;       
+    padding-right:3px;       
 }
 
 .container .userInput{
-all:unset; 
-height:40px;
-width:100%;
-border-bottom:2px solid black;
-font-size:16px;
-margin-top:20px;
+    all:unset; 
+    height:40px;
+    width:100%;
+    border-bottom:2px solid black;
+    font-size:16px;
+    margin-top:20px;
 }
 
 .generate-btn{
-all:unset;  
-height:45px;
-width:100%;
-background:#00BFFF;  
+    all:unset;  
+    height:45px;
+    width:100%;
+    background:#00BFFF;  
 color:white;
 display:flex;
 justify-content:center;
