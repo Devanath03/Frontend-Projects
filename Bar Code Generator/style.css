@@ -53,7 +53,7 @@ body{
     width:100%;
     background:#00BFFF;  
     color:white;
-display:flex;
+    display:flex;
 justify-content:center;
 align-items:center;
 text-transform:capitalize;
