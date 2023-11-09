@@ -59,7 +59,7 @@ body{
     text-transform:capitalize;
     border-radius:3px;
     margin-top:8px;
-cursor:pointer;
+    cursor:pointer;
 }
 
 .container .barcode-box{
