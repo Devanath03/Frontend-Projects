@@ -56,7 +56,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-text-transform:capitalize;
+    text-transform:capitalize;
 border-radius:3px;
 margin-top:8px;
 cursor:pointer;
