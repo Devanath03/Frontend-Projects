@@ -87,7 +87,7 @@ body{
 
 ::selection {
     background:rgb(100, 149, 237, 0.8);
-color:white;
+    color:white;
 }
 
 .download button{  
