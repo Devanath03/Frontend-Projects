@@ -68,7 +68,7 @@ body{
     margin-top:25px;
     border-radius:3px;
     transition:all .2s;
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .container.active .barcode-box{
