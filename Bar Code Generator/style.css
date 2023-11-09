@@ -66,7 +66,7 @@ body{
     height:0px; 
     width:100%;
     margin-top:25px;
-border-radius:3px;
+    border-radius:3px;
 transition:all .2s;
 margin-bottom: 15px;
 }
