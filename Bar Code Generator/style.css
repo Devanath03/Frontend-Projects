@@ -79,7 +79,7 @@ body{
 
 .container.active .barcode-box #barcode{
     position:absolute; 
-left:12%;
+    left:12%;
 height:165px;
 width:270px;
 margin-top:15px;       
