@@ -54,7 +54,7 @@ body{
     background:#00BFFF;  
     color:white;
     display:flex;
-justify-content:center;
+    justify-content:center;
 align-items:center;
 text-transform:capitalize;
 border-radius:3px;
