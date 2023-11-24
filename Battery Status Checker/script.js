@@ -84,11 +84,3 @@ navigator.getBattery().then((battery) => {
       : (otherInfo.style.display = "none");
   }
 });
-
-
-
-
-
-
-
-
