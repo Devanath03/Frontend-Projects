@@ -29,3 +29,4 @@ closeIcon.addEventListener("click", () => {
   clearTimeout(timer2);
 });
 
+
