@@ -28,4 +28,4 @@ closeIcon.addEventListener("click", () => {
   clearTimeout(timer1);
   clearTimeout(timer2);
 });
-2345678910111213
+234567891011121314
