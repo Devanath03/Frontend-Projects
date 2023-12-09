@@ -27,4 +27,4 @@ closeIcon.addEventListener("click", () => {
 
   clearTimeout(timer1);
   clearTimeout(timer2);
-});1234567
+});12345678
