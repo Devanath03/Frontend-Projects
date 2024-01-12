@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+  
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #56c7c9, #071f4e);
+}
+
+h1{
+  font-size: 40px;
+  border-bottom: 20px;
+  color: #fff;
+}
+  
+.container {
+    height: 600px;
+    max-width: 500px;
+    background: white;
+    border-radius: 7px;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.name,
+.getContact{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 9px;
+    color: #003040;
+}
+  
+.form input,
+.form button{
+    width: 80%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.1s ease;
+    margin-right: 20%;
+    margin-bottom: 9px;
+    margin-left: 10%;
+}
+
+.form input{
+    font-size: 1.1rem;
+    padding: 0 5rem;
+    border: 1px solid #999;
+}
+
+.form input:focus,
+.getInputs input:focus{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form input::placeholder,
+.getInputs input::placeholder{
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.form button{ 
+    color: #fff;
+    cursor: pointer;
+    margin-top: 9px;
+    font-size: 1.2rem;
+    background: #003040;
+}
+
+.displayContactStyle::before {
+  content: '📞 ';
+}
+#displayContact{
+margin-top: 9px;
+font-size:1.1rem;
+font-weight: bold;
+color: #003040;
+}
+#displayNoti{
+    margin-left: 9.8%;
+}

@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #27272c;
+  }
+
+input:invalid{
+    border: 5px solid red;
+    animation: shake 0.2s 2;
+}
+
+input{
+  font-size: 25px;
+  width: 250px; /* FOR INCREASING LENGTH OF THE INPUT FIELD*/
+  height: 45px; /* FOR INCREASING BREADTH OF THE INPUT FIELD*/
+  color: aliceblue;
+  border: 5px solid green;
+  background-color: #27272c;
+}
+
+@keyframes shake {
+    25%
+    {
+        translate: 6px 0;
+    }
+    50%{
+        translate: -6px 0;
+    }
+    75%{
+        translate: 6px 0;
+    }
+
+}

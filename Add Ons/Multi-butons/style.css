@@ -1,0 +1,87 @@
+body {
+    background-color:  #212121;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+  
+  .multi-button {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 14px;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+      place-items: center;
+  }
+  
+  #cut {
+    background-color: rgb(85,131,241);
+    border: 1px solid rgb(85,131,241);
+  }
+  
+  #cut {
+    background-color: rgb(85,131,241);
+    border: 1px solid rgb(85,131,241);
+    
+  }
+  
+  #copy {
+    background-color: rgb(39,166,75);
+    border: 1px solid rgb(39,166,75);
+    
+  }
+  
+  #paste {
+    background-color: rgb(242,185,42);
+    border: 1px solid rgb(242,185,42);
+    
+  }
+  
+  
+  .button { 
+    box-shadow: 0 4px 8px 0 rgba(79, 17, 17, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
+    padding: 10px 17px 10px 17px;
+      font: 15px Ubuntu;
+    color: white;
+    border-radius: 7px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  #cut span:after {
+    font-family: FontAwesome;
+    content: "\f0c4";
+  }
+  
+  #copy span:after {
+    font-family: FontAwesome;
+    content: "\f0c5";
+  }
+  
+  #paste span:after {
+    font-family: FontAwesome;
+    content: "\f0ea";
+  }

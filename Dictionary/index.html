@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dictionary App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>English Dictionary</header>
+        <div class="search">
+            <input type="text" class="textarea" placeholder="Search a word" required spellcheck="false">
+            <i class="fas fa-search"></i>
+            <span class="material-icons">close</span>
+        </div>
+        <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+        <ul>
+            <li class="word">
+                <div class="details">
+                    <p>__</p>
+                    <span>_ _</span>
+                </div>
+                <i class="fas fa-volume-up"></i>
+            </li>
+            <div class="content">
+                <li class="meaning">
+                    <div class="details">
+                        <p>Meaning</p>
+                        <span>___</span>
+                    </div>
+                </li>
+                <li class="example">
+                    <div class="details">
+                        <p>Example</p>
+                        <span>___</span>
+                    </div>
+                </li>
+                <li class="synonyms">
+                    <div class="details">
+                        <p>Synonyms</p>
+                        <div class="list"></div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

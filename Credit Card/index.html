@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="card front-face">
+          <header>
+            <span class="logo">
+              <img src="/logo.png" alt="" />
+              <h5>Master Card</h5>
+            </span>
+            <img src="Assets/chip.png" alt="" class="chip" />
+          </header>
+
+          <div class="card-details">
+            <div class="name-number">
+              <h6>Card Number</h6>
+              <h5 class="number">#### #### #### ####</h5>
+              <h6  class="name-label">Card Holder Name</h6>
+              <h5 class="name">Master Card</h5>
+            </div>
+            <div class="valid-date">
+              <h6>Valid Thru</h6>
+              <h5 class="validity">00/00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="card back-face">
+          <h6>
+            For enquiries contact 044-45876374 toll free number
+          </h6>
+          <span class="magnetic-strip"></span>
+          <div class="signature"><i class="cvv">000</i></div>
+          <h5>
+            This card is the property of mastercard. Use of this card is subject
+            to terms and conditions of this coding bank. If found please follow
+            return to the bank
+          </h5>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="first-part">
+           <div class="card-num">
+            <input type="text" required="true" maxlength="16"/>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Card Number</label>
+           </div>
+          <div class="card-date">
+            <input type="text" required="true" maxlength="5"/>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Valid Thru</label>
+          </div>
+        </div>
+        <div class="sec-part">
+          <div class="card-name">
+            <input type="text" required="true" />
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Card Holder Name</label>
+          </div>
+          <div class="card-cvv">
+            <input type="text" required="true" maxlength="3"/>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>CVV</label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
