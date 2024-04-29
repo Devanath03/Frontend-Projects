@@ -13,6 +13,10 @@
         container.classList.toggle("is-flipped");//calling css defined class
    });
 
+  cvvInput.addEventListener("click",() =>{
+    container.classList.toggle("is-flipped");
+  });
+
   cardNumberInput.addEventListener("input", function () { // for accessing this keyword using function type not arrow functions
     cardNumberDisplay.textContent = this.value
       ? formatCardNumber(this.value)
