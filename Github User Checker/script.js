@@ -35,8 +35,8 @@ class Github {
 
 const findUser = new Github();
 
-//IT WILL SHOW DEFAULT USER WITHOUT ANY SERCH IF UNCOMMENTTED
-// findUser.getUsers("john doe")
+//IT WILL SHOW DEFAULT USER WITHOUT ANY SEARCH IF UNCOMMENTTED
+// findUser.getUsers("john")
 // 	.then(res => {
 // 	if(res.total_count > 0) findUser.createElement(res.items,res.total_count);
 // })
