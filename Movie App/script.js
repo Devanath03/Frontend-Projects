@@ -75,3 +75,4 @@ form.addEventListener("submit", (e) => {
         search.value = "";
     }
 });
+1
