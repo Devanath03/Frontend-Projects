@@ -128,4 +128,4 @@ const ended = () => {
 window.onload = () => {
   updatePlayer();
 };
-1
+12
