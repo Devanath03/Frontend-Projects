@@ -174,5 +174,5 @@ const languages = {
         }
         speechSynthesis.speak(utterance);
       }
-    });123
+    });1234
   });
