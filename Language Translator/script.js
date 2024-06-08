@@ -96,7 +96,7 @@ const languages = {
     "xh-ZA": "Xhosa",
     "yi-YD": "Yiddish",
     "zu-ZA": "Zulu",
-  };123456
+  };1234567
   
   const fromText = document.querySelector(".from-text"),
     toText = document.querySelector(".to-text"),
