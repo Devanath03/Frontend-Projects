@@ -49,4 +49,4 @@ function updateBigGlass(){
         liters.innerText =`${4 - (250 * fullGlass / 1000)}L`
     }
 }
-12345678902
+123456789022
