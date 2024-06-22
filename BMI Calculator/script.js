@@ -54,5 +54,5 @@ function countBmi(){
   document.getElementById("submit").removeEventListener("click", countBmi);
   document.getElementById("submit").removeEventListener("click", validateForm);
 }
-document.getElementById("submit").addEventListener("click", countBmi);
+document.getEl0ementById("submit").addEventListener("click", countBmi);
 123456789
