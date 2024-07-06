@@ -78,5 +78,4 @@ search.addEventListener('click', () => {
 
         });
 
-
 });
