@@ -75,6 +75,6 @@ search.addEventListener('click', () => {
             weatherDetails.classList.add('fadeIn');
             container.style.height = '590px';
 
-1234567890
+12345678901
         });
 });
