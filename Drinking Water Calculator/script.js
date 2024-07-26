@@ -47,5 +47,5 @@ function updateBigGlass(){
     } else {
         remaining.style.visibility = 'visible'
         liters.innerText =`${4 - (250 * fullGlass / 1000)}L`
-    }1234567890
+    }12345678901
 }
