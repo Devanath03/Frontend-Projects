@@ -37,4 +37,4 @@ document.addEventListener("DOMContentLoaded", function() {
             countDisplay.textContent = "";
         }
     });
-});123456789012
+});1234567890123
