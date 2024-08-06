@@ -134,4 +134,4 @@ function deleteUser(userId) {
 addBtn.addEventListener("click", addUser);
 
 // Initialize table
-renderTable();
+renderTable();1
