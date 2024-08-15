@@ -266,7 +266,7 @@ input{
   input:focus ~ .bar:after {
     width: 50%;
   }
-12
+123
   .highlight {
     position: absolute;
     height: 60%;
