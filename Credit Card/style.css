@@ -266,7 +266,7 @@ input{
   input:focus ~ .bar:after {
     width: 50%;
   }
-1234567
+12345678
   .highlight {
     position: absolute;
     height: 60%;
