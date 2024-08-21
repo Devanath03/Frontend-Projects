@@ -127,4 +127,4 @@ const ended = () => {
 
 window.onload = () => {
   updatePlayer();
-};1234567890123
+};12345678901234
