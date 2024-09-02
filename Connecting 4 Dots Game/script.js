@@ -137,4 +137,4 @@ PlayConnectFour.prototype = function () {
 
 }();
 
-var g_connectFour = new PlayConnectFour();12245678
+var g_connectFour = new PlayConnectFour();122456789
