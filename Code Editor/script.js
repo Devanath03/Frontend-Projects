@@ -1,7 +1,7 @@
 const htmlcode = document.querySelector("#html");
 const csscode = document.querySelector("#css");
 const jscode = document.querySelector("#js");
-const output = document.querySelector("#output");12
+const output = document.querySelector("#output");123
 
 function run() {
 
