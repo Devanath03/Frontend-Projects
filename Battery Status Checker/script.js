@@ -1,6 +1,5 @@
 const chargingIcon = document.querySelector(".charging_icon");
 const batteryLevel = document.querySelector(".battery_level");
-
 const chargingBar = document.querySelector(".charging_bar");
 
 const dischargingTime = document.querySelector(".discharging_time");
