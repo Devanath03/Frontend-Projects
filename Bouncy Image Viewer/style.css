@@ -1,5 +1,5 @@
 @import "https://unpkg.com/open-props" layer(design.system);
-123456
+1234567
 @layer demo {
   fieldset {
     grid-template-columns:
