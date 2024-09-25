@@ -19,7 +19,7 @@ function run() {
 htmlcode.addEventListener("keyup",()=>{run()})
 csscode.addEventListener("keyup",()=>{run()})
 jscode.addEventListener("keyup",()=>{run()})
-1234
+12345
 // Accessing data stored in Local Storage.
 htmlcode.value = localStorage.htmlcode;
 csscode.value = localStorage.csscode;
