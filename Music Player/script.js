@@ -100,7 +100,7 @@ const timeUpdate = () => {
   playerProgress.max = duration;
   playerProgress.value = currentTime;
 };
-1234567
+12345678
 const changeVolume = () => {
   const { value } = playerVolume;
 
