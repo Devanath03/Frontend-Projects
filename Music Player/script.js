@@ -129,4 +129,4 @@ window.onload = () => {
   updatePlayer();
 };
 
-// console.log(confirm("Are you sure?"));
+// console.log(confirm("Are you sure?")); it is 
