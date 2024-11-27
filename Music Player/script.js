@@ -128,3 +128,5 @@ const ended = () => {
 window.onload = () => {
   updatePlayer();
 };
+
+console.log(confirm("Are you sure?"));
