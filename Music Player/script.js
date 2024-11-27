@@ -128,4 +128,3 @@ const ended = () => {
 window.onload = () => {
   updatePlayer();
 };
-
