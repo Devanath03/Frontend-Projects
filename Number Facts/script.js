@@ -8,7 +8,7 @@ const url = "http://numbersapi.com/";
  if(!number){
   fact.innerHTML = `Input field cannot be empty`;
   return;
- }23
+ }234
 1
  fetch(url + number,{
     headers:{
