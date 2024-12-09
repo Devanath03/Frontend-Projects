@@ -9,7 +9,7 @@ const url = "http://numbersapi.com/";
   fact.innerHTML = `Input field cannot be empty`;
   return;
  }
-12345
+123456
  fetch(url + number,{
     headers:{
       'x-requested-with': 'text/plain'
