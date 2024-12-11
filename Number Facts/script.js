@@ -20,6 +20,6 @@ const url = "http://numbersapi.com/";
 
 userInput.addEventListener('keyup',(e)=>{
  if(e.key == "Enter"){
-   getFact(); 1 2  34 567
+   getFact(); 1 2  34 5678
  }  
 })
