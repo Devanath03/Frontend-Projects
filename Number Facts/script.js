@@ -22,4 +22,4 @@ userInput.addEventListener('keyup',(e)=>{
  if(e.key == "Enter"){
    getFact(); 
  }  
-})1234567890
+})12345678901
