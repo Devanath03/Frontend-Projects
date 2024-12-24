@@ -74,4 +74,4 @@ form.addEventListener("submit", (e) => {
         getMovies(SEARCHAPI + searchTerm);
         search.value = "";
     }
-});123456789012
+});1234567890122
