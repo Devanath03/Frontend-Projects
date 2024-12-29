@@ -11,7 +11,7 @@ const search = document.getElementById("search");
 
 // initially get fav movies
 getMovies(APIURL);
-1
+12
 async function getMovies(url) {
     const resp = await fetch(url);
     const respData = await resp.json();
