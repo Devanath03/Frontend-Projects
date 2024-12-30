@@ -20,7 +20,7 @@ async function getMovies(url) {
 
     showMovies(respData.results);
 }
-12345
+123456
 function showMovies(movies) {
     // clear main
     main.innerHTML = "";
