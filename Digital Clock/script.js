@@ -51,5 +51,5 @@ setInterval(() => {
     date.innerHTML = dd;
     month.innerHTML = mon;
     year.innerHTML = yr;
-    // let mn = new Date().getMonth();12345678901
+    // let mn = new Date().getMonth();123456789012
 }, 1000); //function get executed after 1 seconds
