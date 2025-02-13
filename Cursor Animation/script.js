@@ -44,4 +44,4 @@ document.body.addEventListener('click', () => {
         pc.uniforms.uNoiseIntensity.value = 0.0001;
         pc.uniforms.uPointSize.value = 0;
     }, 2000);
-});8
+});89
