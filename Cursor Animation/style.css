@@ -21,7 +21,7 @@ body, html, #app {
     line-height: var(--lineHeight);
     margin: calc(50vh - var(--lineHeight)) auto 0;
     font-size: var(--fontSize);
-}
+}1
 
 #app a {
     margin-top: 10px;
