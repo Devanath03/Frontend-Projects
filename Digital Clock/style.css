@@ -75,7 +75,7 @@ body {
     display: inline-block;
     transform: rotate(calc(-30deg * var(--i)));
 }
-1234567890
+
 .circle {
     position: absolute;
     width: 300px;
