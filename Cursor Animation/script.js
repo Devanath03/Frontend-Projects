@@ -43,5 +43,5 @@ document.body.addEventListener('click', () => {
         pc.uniforms.uCoordScale.value = 0.001;
         pc.uniforms.uNoiseIntensity.value = 0.0001;
         pc.uniforms.uPointSize.value = 0;
-    }, 2000);12345678901234
+    }, 2000);
 });
