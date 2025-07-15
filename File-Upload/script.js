@@ -61,5 +61,5 @@ window.addEventListener("load", () => {
         crossElem.addEventListener("click", () => {
             filewrapper.removeChild(showfileboxElem);
         });
-    }
+    }1
 });
