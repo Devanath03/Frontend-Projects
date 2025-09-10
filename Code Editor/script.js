@@ -20,7 +20,7 @@ htmlcode.addEventListener("keyup",()=>{run()})
 csscode.addEventListener("keyup",()=>{run()})
 jscode.addEventListener("keyup",()=>{run()})
 
-// Accessing data stored in Local Storage
+// Accessing data stored in Local Storage.
 htmlcode.value = localStorage.htmlcode;
 csscode.value = localStorage.csscode;
 jscode.value = localStorage.jscode;
